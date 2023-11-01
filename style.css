@@ -1,0 +1,86 @@
+@charset  "UTF-8";
+body{
+    background-color: khaki;
+}
+header{
+    color:  white;
+    min-width: 320px;
+    max-width: 800px;
+    text-align: center;
+    border-radius: 10px;
+    margin: auto;
+    padding: 10px;
+    background-image: linear-gradient(to bottom,  #26B3E5, #4295B3, #497180);
+}
+h2{
+    text-align: center;
+    text-decoration: underline;
+}
+sub{
+    font-size: 12px;
+}
+i{
+    color: chartreuse;
+    font-size: 16px;
+}
+b{
+    color: black;
+}
+#sla{
+    text-align: center;
+    line-height: 100px;
+    height: 100px;
+    width: 100px;
+    background-color: #8a2be2;
+}
+.left{
+    text-align: left;
+}
+.right{
+    text-align: right;
+}
+.center{
+    text-align: center;
+}
+.flex{
+    display: flex;
+    gap: 10px;
+    justify-content: left;
+    padding: 5px;
+}
+li:hover{
+font-size: 20px;
+text-decoration: underline;
+color: khaki;
+background-color: blue;
+max-width: 200px;
+}
+img{
+    max-width: 200px;
+    max-height: 200px;
+}
+main{
+    padding: 10px;
+    min-width: 320px;
+    max-width: 800px;
+    text-align: center;
+    color: white;
+    margin: auto;
+    border-radius: 10px;
+    background-image: linear-gradient(to bottom, #26B3E5, #4295B3, #497180);
+}
+div >aside{
+    padding: 5px;
+   font-family: 'sans-serif';
+   text-align: left;
+}
+aside{
+    text-align: justify;
+}
+aside >input{
+    max-width: 50px;
+}
+footer{
+    font-size: 18px;
+    text-align: center;
+}

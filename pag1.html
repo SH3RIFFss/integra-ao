@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>opinatorio|teste</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Melhores series<sub>animadas</sub></h1>
+        <h2>Respectivamente</h2>
+        <article>
+            <div class="flex">
+                <aside >
+                    <ol class="left">
+                        <li>Os Simpsons</li>
+                        <li>Rick and Morty</li>
+                        <li>Desencanto</li>
+                        <li>Ominiman</li>
+                    </ol>
+                </aside>
+                <aside>
+                    <p class="center">lembrando q tudo aqui decidido é baseado apenas em minha opinião !</p>
+                </aside>
+            </div>
+            <p>Agora a seguir vamos ver mais sobre cada um deles</p>
+        </article>
+    </header>
+    <br>
+    <main>  
+        <article> 
+            <h1>INTRODUÇÃO</h1>
+            <div class="flex"> 
+                <aside> 
+                    <h2>Os Simpsons </h2>
+                    <p>Os Simpsons é um serie de humor americana de baixo senso de oque é <b>serto ou errado</b>, basicamente ela se resume a uma familia que é composta por um bebado,uma altentica nona de casa, um adolescente problematico e revoltado, uma tambem adolescente com alta cacidade cognitiva <i>nerd</i>, e uma bêbê viciada em cupeta.E a  melhor parte e que os diferencia é que eles sao amarelos </p>
+                </aside>  
+                <aside>
+                    <h2>Rick and Morty</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem necessitatibus eos nobis officiis iste vel porro, explicabo iusto atque! Sunt aliquam rerum corrupti labore illum sed sint debitis recusandae Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est iure magni voluptate aut, rem ipsum eum. Error, laboriosam? Excepturi ipsum fugiat sunt magni aut eaque atque fuga expedita, reprehenderit vitae!</p>
+                </aside>
+            </div>
+        </article>
+        <article>
+            <div class="flex">
+                <aside>
+                    <h2>Desencanto</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores pariatur autem ipsam consectetur quam fugit, voluptatibus praesentium odio nihil a et ducimus quae deleniti doloremque nostrum illo, ea aperiam culpa? Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ipsam temporibus dolore deserunt odio. Iusto illum corporis esse non nobis at repudiandae ut officiis! Perferendis, et minima! Laboriosam, sunt eos.</p>
+                </aside>
+                <aside>
+                    <h2>Ominiman</h2>
+                    <p id="cuzin">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod repellat asperiores, nostrum odit assumenda molestiae excepturi quis fugit, deserunt possimus recusandae optio error expedita beatae iusto natus! Iure, dolor debitis Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui magni laudantium eligendi eius, magnam nihil ea sit nulla mollitia beatae architecto, quibusdam aspernatur adipisci impedit iste error sint dolorum officiis.</p>
+                </aside>
+            </div>
+        </article>
+        <article>
+            <h1>Mais detalhes</h1>
+            <div class="flex">
+                <aside>
+                    <h2>Os Simpsons</h2>
+                    <img src="https://veja.abril.com.br/wp-content/uploads/2016/06/simpsons-original1.jpeg?quality=90&strip=info" alt="uma familia de coloração amarelada">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, vero, consectetur rerum earum est ea, soluta ullam aliquam assumenda quidem quod dicta nobis provident cumque odio sed explicabo suscipit velit?</p>
+                </aside>
+                <aside>
+                    <h2>Rick and Morty</h2>
+                    <img src="https://www.shutterstock.com/shutterstock/photos/2089759198/display_1500/stock-vector-rick-and-morty-portal-vector-2089759198.jpg" alt="um velho e uma criança">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa reprehenderit deserunt sequi. Recusandae inventore, corporis aliquid dolore, tempora quisquam aliquam quibusdam dolorem sapiente assumenda ad fugit sequi nisi, fugiat animi.</p>
+                </aside>
+            </div>
+        </article>
+        <article>
+            <h2>Aqui teremos trestes de JS</h2>
+            <div class="flex">
+                <aside>
+                    <p id="sla">mouse test</p>
+                </aside>
+                <aside>
+                    <h2>Somando valores</h2>
+                    <input type="number" name="n1" id="n1">+
+                    <input type="number" name="n2" id="n2">
+                    <input type="button" value="somar" onclick="somar()">
+                    <div id="fdp">igual</div>
+                </aside>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <p>vida longa e prospera&#x1f596</p>
+        <p>ass&#58SH3R1FF</p>
+        <p class="right">contato&#58 65 9 84****** <br> email&#58 picade*****@gmail.com</p>
+    </footer>
+    <script>
+     var a = document.getElementById('sla')
+     a.addEventListener('click',clicar)
+     a.addEventListener('mouseout',sair)
+        function clicar(){
+            a.innerText="clicou!"
+            a.style.background = 'red' 
+        }
+        function sair(){
+            a.innerText="mouse test"
+            a.style.background='#8a2be2'
+        }
+
+        function somar(){
+            var tn1 = window.document.getElementById('n1')
+            var tn2 = window.document.getElementById('n2')
+            var res = window.document.getElementById('fdp')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1 + n2
+            res.innerHTML = `a soma entre ${n1} e ${n2} é igual a ${s}`
+        }
+    </script>
+</body>
+</html>
